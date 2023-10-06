@@ -1,4 +1,4 @@
-#Wifi attendance app made in Flutter and Django.
+# Wifi attendance app made in Flutter and Django.
 
 # Frontend
 ## Overview

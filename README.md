@@ -33,13 +33,6 @@ The `routes` property is a map that defines the routes for the application. Each
 - The `routes` property is a map that defines the routes for the application.
 - The code sets up the basic structure and configuration of a Flutter application, including the initialization of Firebase, defining routes for different screens, and configuring the theme of the application.
 
-Citations:
-[1] https://stackoverflow.com/questions/54072544/how-to-solved-dartui-error-when-going-to-run-flutter-app
-[2] https://github.com/flutter/flutter-intellij/issues/2307
-[3] https://firebase.google.com/docs/flutter/setup
-[4] https://docs.flutter.dev/packages-and-plugins/using-packages
-[5] https://docs.flutter.dev/tools/vs-code
-[6] https://docs.flutter.dev/packages-and-plugins/developing-packages
 
 # Backend
 ## Overview
@@ -83,5 +76,3 @@ If an error occurs during the processing of the request, an appropriate error re
 - The `AttendanceSessionView` class uses `try-except` blocks to handle exceptions that may occur during the processing of the request. 
 - The `AttendanceSessionView` class uses list comprehension to create a list of active students in the response.
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/1813009/6396f8d5-0743-4631-b6b7-c7c93d600886/views.py

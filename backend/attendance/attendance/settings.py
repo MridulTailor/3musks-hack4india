@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-0ref%v!(w!t%_g43yt(uyxne^zhmeugd*_v^9no!i48_8m351d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["http://127.0.0.1:8000/", "http://10.0.2.2:8000/", "http://10.0.2.2/", "http://127.0.0.1/", "10.0.2.2"]
 
 
 # Application definition
@@ -52,6 +52,31 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "attendance.urls"
 
+CORS_ALLOW_ALL_ORIGINS = True  # Allow all domains (for development purposes)
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]  # Define the allowed headers
+CORS_ALLOWED_ORIGINS = [
+    "http://ec2-13-59-151-95.us-east-2.compute.amazonaws.com",
+    "http://ec2-13-59-151-95.us-east-2.compute.amazonaws.com:3000",
+]
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -67,6 +92,9 @@ TEMPLATES = [
         },
     },
 ]
+
+
+
 
 WSGI_APPLICATION = "attendance.wsgi.application"
 

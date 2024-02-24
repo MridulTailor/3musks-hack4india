@@ -1,4 +1,4 @@
-# Wifi attendance app made in Flutter and Django.
+# Wifi attendance app made in Flutter and Django submission for Hack4India hackathon by 3Musketeers
 
 # Frontend
 ## Overview
